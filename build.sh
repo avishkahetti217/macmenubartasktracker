@@ -22,6 +22,8 @@ cat > "$APP/Contents/Info.plist" <<PLIST
     <key>CFBundleVersion</key><string>1</string>
     <key>LSMinimumSystemVersion</key><string>14.0</string>
     <key>LSUIElement</key><true/>
+    <key>NSCalendarsFullAccessUsageDescription</key><string>Task Tracker shows your finished calendar events alongside the tasks you completed.</string>
+    <key>NSCalendarsUsageDescription</key><string>Task Tracker shows your finished calendar events alongside the tasks you completed.</string>
 </dict>
 </plist>
 PLIST

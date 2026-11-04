@@ -2,10 +2,30 @@ import Foundation
 import SQLite3
 
 struct TaskRecord: Identifiable, Equatable {
-    let id: Int64
+    enum Source: Equatable {
+        case manual(dbID: Int64)
+        case calendar(eventID: String, calendarName: String)
+    }
+
+    let source: Source
     var title: String
     var startedAt: Date
     var endedAt: Date?
+
+    var id: String {
+        switch source {
+        case .manual(let dbID): return "db-\(dbID)"
+        case .calendar(let eventID, _): return "cal-\(eventID)-\(startedAt.timeIntervalSince1970)"
+        }
+    }
+
+    /// Row id in SQLite; nil for calendar events.
+    var dbID: Int64? {
+        if case .manual(let id) = source { return id }
+        return nil
+    }
+
+    var isCalendarEvent: Bool { dbID == nil }
 
     var duration: TimeInterval {
         (endedAt ?? Date()).timeIntervalSince(startedAt)
@@ -66,7 +86,7 @@ final class Database {
         sqlite3_bind_text(stmt, 1, title, -1, SQLITE_TRANSIENT)
         sqlite3_bind_double(stmt, 2, date.timeIntervalSince1970)
         guard sqlite3_step(stmt) == SQLITE_DONE else { return nil }
-        return TaskRecord(id: sqlite3_last_insert_rowid(db), title: title, startedAt: date, endedAt: nil)
+        return TaskRecord(source: .manual(dbID: sqlite3_last_insert_rowid(db)), title: title, startedAt: date, endedAt: nil)
     }
 
     func endTask(id: Int64, at date: Date = Date()) {
@@ -109,7 +129,7 @@ final class Database {
             let ended: Date? = sqlite3_column_type(stmt, 3) == SQLITE_NULL
                 ? nil : Date(timeIntervalSince1970: sqlite3_column_double(stmt, 3))
             rows.append(TaskRecord(
-                id: sqlite3_column_int64(stmt, 0),
+                source: .manual(dbID: sqlite3_column_int64(stmt, 0)),
                 title: String(cString: sqlite3_column_text(stmt, 1)),
                 startedAt: Date(timeIntervalSince1970: sqlite3_column_double(stmt, 2)),
                 endedAt: ended

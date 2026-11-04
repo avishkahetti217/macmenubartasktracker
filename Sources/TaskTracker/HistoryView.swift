@@ -40,9 +40,11 @@ struct HistoryView: View {
                                     NSPasteboard.general.clearContents()
                                     NSPasteboard.general.setString(task.title, forType: .string)
                                 }
-                                Button("Delete", role: .destructive) {
-                                    store.delete(task)
-                                    reload()
+                                if !task.isCalendarEvent {
+                                    Button("Delete", role: .destructive) {
+                                        store.delete(task)
+                                        reload()
+                                    }
                                 }
                             }
                     }
@@ -56,11 +58,16 @@ struct HistoryView: View {
                     .disabled(tasks.isEmpty)
             }
             .padding(10)
+
+            Divider()
+            ExportSection()
+                .padding(10)
         }
-        .frame(minWidth: 420, minHeight: 400)
+        .frame(minWidth: 540, minHeight: 480)
         .onAppear(perform: reload)
         .onChange(of: day) { reload() }
         .onChange(of: store.todayTasks) { reload() }
+        .onChange(of: store.includeCalendar) { reload() }
     }
 
     private func shift(_ days: Int) {
@@ -72,7 +79,7 @@ struct HistoryView: View {
     private func copyDay() {
         let header = DateFormatter.localizedString(from: day, dateStyle: .full, timeStyle: .none)
         let lines = tasks.map { t in
-            "- \(Fmt.time.string(from: t.startedAt))–\(Fmt.time.string(from: t.endedAt ?? Date()))  \(t.title) (\(Fmt.shortDuration(t.duration)))"
+            "- \(Fmt.time.string(from: t.startedAt))–\(Fmt.time.string(from: t.endedAt ?? Date()))  \(t.isCalendarEvent ? "📅 " : "")\(t.title) (\(Fmt.shortDuration(t.duration)))"
         }
         let text = ([header] + lines + ["Total: \(Fmt.shortDuration(total))"]).joined(separator: "\n")
         NSPasteboard.general.clearContents()

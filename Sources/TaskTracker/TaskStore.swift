@@ -7,20 +7,36 @@ final class TaskStore: ObservableObject {
     @Published private(set) var todayTasks: [TaskRecord] = []
     @Published var now = Date()
 
+    @Published var includeCalendar: Bool {
+        didSet {
+            UserDefaults.standard.set(includeCalendar, forKey: "includeCalendar")
+            if includeCalendar && calendar.access == .notDetermined {
+                Task { await calendar.requestAccess() }
+            }
+            refreshToday()
+        }
+    }
+
     let db = Database()
+    let calendar = CalendarService()
     private var timer: AnyCancellable?
 
     init() {
+        includeCalendar = UserDefaults.standard.bool(forKey: "includeCalendar")
         activeTask = db.activeTask()
         refreshToday()
-        // Tick every second so the elapsed time in the menu bar stays live.
+        calendar.onChange = { [weak self] in self?.refreshToday() }
+
+        // Tick every second so the elapsed time in the popup stays live.
         timer = Timer.publish(every: 1, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] date in
                 guard let self else { return }
                 let dayChanged = !Calendar.current.isDate(date, inSameDayAs: self.now)
+                let minuteChanged = Int(date.timeIntervalSince1970 / 60) != Int(self.now.timeIntervalSince1970 / 60)
                 self.now = date
-                if dayChanged { self.refreshToday() }
+                // Re-check each minute so meetings appear as soon as they end.
+                if dayChanged || (minuteChanged && self.includeCalendar) { self.refreshToday() }
             }
     }
 
@@ -33,29 +49,34 @@ final class TaskStore: ObservableObject {
     }
 
     func end() {
-        guard let task = activeTask else { return }
-        db.endTask(id: task.id)
+        guard let id = activeTask?.dbID else { return }
+        db.endTask(id: id)
         activeTask = nil
         refreshToday()
     }
 
     func discardActive() {
-        guard let task = activeTask else { return }
-        db.deleteTask(id: task.id)
+        guard let id = activeTask?.dbID else { return }
+        db.deleteTask(id: id)
         activeTask = nil
     }
 
     func delete(_ task: TaskRecord) {
-        db.deleteTask(id: task.id)
+        guard let id = task.dbID else { return }
+        db.deleteTask(id: id)
         refreshToday()
     }
 
     func refreshToday() {
-        todayTasks = db.completedTasks(on: Date())
+        let updated = tasks(on: Date())
+        if updated != todayTasks { todayTasks = updated }
     }
 
+    /// Completed tasks plus (optionally) finished calendar events for a day, oldest first.
     func tasks(on day: Date) -> [TaskRecord] {
-        db.completedTasks(on: day)
+        var items = db.completedTasks(on: day)
+        if includeCalendar { items += calendar.events(on: day) }
+        return items.sorted { $0.startedAt < $1.startedAt }
     }
 }
 

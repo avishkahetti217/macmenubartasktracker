@@ -24,7 +24,7 @@ struct TaskTrackerApp: App {
             HistoryView()
                 .environmentObject(store)
         }
-        .defaultSize(width: 480, height: 560)
+        .defaultSize(width: 560, height: 640)
     }
 }
 

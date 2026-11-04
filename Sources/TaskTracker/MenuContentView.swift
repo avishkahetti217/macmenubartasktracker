@@ -17,6 +17,10 @@ struct MenuContentView: View {
 
             Divider()
 
+            CalendarToggle(calendar: store.calendar)
+
+            Divider()
+
             HStack {
                 Button {
                     openWindow(id: "history")
@@ -127,13 +131,41 @@ struct MenuContentView: View {
     }
 }
 
+struct CalendarToggle: View {
+    @EnvironmentObject var store: TaskStore
+    @ObservedObject var calendar: CalendarService
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Toggle("Include Apple Calendar events", isOn: $store.includeCalendar)
+                .toggleStyle(.checkbox)
+            if store.includeCalendar && calendar.access == .denied {
+                HStack(spacing: 4) {
+                    Text("Calendar access is off.")
+                        .foregroundStyle(.secondary)
+                    Button("Open Settings") { calendar.openPrivacySettings() }
+                        .buttonStyle(.link)
+                }
+                .font(.caption)
+            }
+        }
+    }
+}
+
 struct TaskRow: View {
     let task: TaskRecord
 
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
             VStack(alignment: .leading, spacing: 2) {
-                Text(task.title).lineLimit(2)
+                HStack(alignment: .firstTextBaseline, spacing: 5) {
+                    if task.isCalendarEvent {
+                        Image(systemName: "calendar")
+                            .foregroundStyle(.secondary)
+                            .help("From Apple Calendar")
+                    }
+                    Text(task.title).lineLimit(2)
+                }
                 if let end = task.endedAt {
                     Text("\(Fmt.time.string(from: task.startedAt)) – \(Fmt.time.string(from: end))")
                         .font(.caption).foregroundStyle(.secondary)

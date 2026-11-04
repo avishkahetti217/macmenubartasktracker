@@ -24,6 +24,14 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CSVExport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift"
         },
         {
@@ -55,6 +63,8 @@
       "moduleName" : "TaskTracker",
       "moduleOutputPath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/Modules/TaskTracker.swiftmodule",
       "objects" : [
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/CSVExport.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/CalendarService.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/Database.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/HistoryView.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/MenuContentView.swift.o",
@@ -119,6 +129,8 @@
       ],
       "prepareForIndexing" : true,
       "sources" : [
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CSVExport.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
@@ -140,6 +152,8 @@
       "-package-name",
       "menubar_app",
       "-c",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CSVExport.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
@@ -221,6 +235,14 @@
         {
           "kind" : "virtual",
           "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CSVExport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift"
         },
         {
           "kind" : "file",
