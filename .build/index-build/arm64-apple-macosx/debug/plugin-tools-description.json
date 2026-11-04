@@ -40,6 +40,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift"
         },
         {
@@ -67,6 +71,7 @@
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/CalendarService.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/Database.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/HistoryView.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/LaunchAtLogin.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/MenuContentView.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/TaskStore.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/TaskTrackerApp.swift.o"
@@ -77,8 +82,6 @@
         "-incremental",
         "-enable-batch-mode",
         "-serialize-diagnostics",
-        "-index-store-path",
-        "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j8",
@@ -88,6 +91,10 @@
         "-module-cache-path",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "TaskTracker_main",
         "-swift-version",
         "5",
         "-Xfrontend",
@@ -131,6 +138,7 @@
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"
@@ -154,6 +162,7 @@
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift",
@@ -164,8 +173,6 @@
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
-      "-index-store-path",
-      "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j8",
@@ -175,6 +182,10 @@
       "-module-cache-path",
       "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "TaskTracker_main",
       "-swift-version",
       "5",
       "-Xfrontend",
@@ -247,6 +258,10 @@
         {
           "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift"
         },
         {
           "kind" : "file",

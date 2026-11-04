@@ -31,7 +31,9 @@ codesign --force --sign - "$APP" >/dev/null
 echo "Built $APP"
 
 if [[ "${1:-}" == "--install" ]]; then
-    rm -rf /Applications/TaskTracker.app
-    cp -R "$APP" /Applications/
-    echo "Installed to /Applications/TaskTracker.app"
+    DEST=/Applications
+    [[ -w "$DEST" ]] || { DEST="$HOME/Applications"; mkdir -p "$DEST"; }
+    rm -rf "$DEST/TaskTracker.app"
+    cp -R "$APP" "$DEST/"
+    echo "Installed to $DEST/TaskTracker.app"
 fi

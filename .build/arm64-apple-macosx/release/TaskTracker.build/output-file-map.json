@@ -28,6 +28,12 @@
     "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swiftdeps",
     "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.dia"
   },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.dia"
+  },
   "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift": {
     "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o",
     "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView~partial.swiftmodule",

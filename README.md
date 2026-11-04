@@ -8,7 +8,7 @@ Log what you're working on from the menu bar. Each finished task is saved to a l
 open build/TaskTracker.app
 ./build.sh --install  # also copies to /Applications
 ```
-To start it at login, go to System Settings → General → Login Items and add TaskTracker.
+To start it at login, tick **Open at Login** in the app's menu (or add it in System Settings → General → Login Items). Install to (~/)Applications first so the login item points at a stable location.
 
 ## Usage
 - Click the checklist icon in the menu bar, type a task, press Return (or click **Start**).

@@ -40,6 +40,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift"
         },
         {
@@ -67,6 +71,7 @@
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/CalendarService.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swift.o",
         "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swift.o"
@@ -131,6 +136,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o"
         },
         {
@@ -152,6 +161,7 @@
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
         "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"
@@ -175,6 +185,7 @@
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/CalendarService.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
       "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift",
@@ -264,6 +275,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/LaunchAtLogin.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift"
         },
         {
@@ -299,6 +314,10 @@
         {
           "kind" : "file",
           "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/LaunchAtLogin.swift.o"
         },
         {
           "kind" : "file",

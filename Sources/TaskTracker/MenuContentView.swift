@@ -18,6 +18,7 @@ struct MenuContentView: View {
             Divider()
 
             CalendarToggle(calendar: store.calendar)
+            LaunchAtLoginToggle()
 
             Divider()
 
