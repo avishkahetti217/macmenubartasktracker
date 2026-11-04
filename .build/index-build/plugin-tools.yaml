@@ -1,0 +1,47 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "TaskTracker-arm64-apple-macosx-debug.module": ["<TaskTracker-arm64-apple-macosx-debug.module>"]
+  "main": ["<TaskTracker-arm64-apple-macosx-debug.module>"]
+  "test": ["<TaskTracker-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"]
+    outputs: ["/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/sources"]
+    description: "Write auxiliary file /Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/sources"
+
+  "/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<TaskTracker-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/Modules/TaskTracker.swiftmodule"]
+    outputs: ["<TaskTracker-arm64-apple-macosx-debug.module>"]
+
+  "C.TaskTracker-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift","/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/sources"]
+    outputs: ["/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/Modules/TaskTracker.swiftmodule"]
+    description: "Compiling Swift Module 'TaskTracker' (5 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","TaskTracker","-emit-dependencies","-emit-module","-emit-module-path","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/Modules/TaskTracker.swiftmodule","-output-file-map","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/output-file-map.json","-incremental","@/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/TaskTracker.build/sources","-I","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/avishkahettiarachchi/Documents/menubar app/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-swift-version","5","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","menubar_app"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/","/Users/avishkahettiarachchi/Documents/menubar app/Package.swift","/Users/avishkahettiarachchi/Documents/menubar app/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

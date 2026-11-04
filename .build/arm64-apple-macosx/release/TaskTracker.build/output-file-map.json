@@ -1,0 +1,37 @@
+{
+  "": {
+    "dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTracker.d",
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTracker.o",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/primary.swiftdeps"
+  },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.dia"
+  },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.dia"
+  },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.dia"
+  },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.dia"
+  },
+  "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift": {
+    "object": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swift.o",
+    "swiftmodule": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swiftdeps",
+    "diagnostics": "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.dia"
+  }
+}

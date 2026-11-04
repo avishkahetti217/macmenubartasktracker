@@ -1,0 +1,295 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.TaskTracker-arm64-apple-macosx-release.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/sources",
+      "importPath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "TaskTracker",
+      "moduleOutputPath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/Modules/TaskTracker.swiftmodule",
+      "objects" : [
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swift.o",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "TaskTracker_main",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "menubar_app"
+      ],
+      "outputFileMapPath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/Modules/TaskTracker.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
+        "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"
+      ],
+      "tempsPath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "TaskTracker" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "TaskTracker",
+      "-package-name",
+      "menubar_app",
+      "-c",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift",
+      "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift",
+      "-I",
+      "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "TaskTracker_main",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "menubar_app",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "TaskTracker" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/Database.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/HistoryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/MenuContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/Sources/TaskTracker/TaskTrackerApp.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/sources"
+    },
+    "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/Database.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/HistoryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/MenuContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.build/TaskTrackerApp.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/TaskTracker.product/Objects.LinkFileList"
+    },
+    "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/avishkahettiarachchi/Documents/menubar app/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}
